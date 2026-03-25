@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<h1>Employee Task Dashboard</h1>
+<a href="login.html" style="position: absolute; top: 20px; right: 20px; text-decoration: none; color: #667eea; font-weight: bold;">Logout</a>
+
+<div class="container">
+
+    <div class="task-box">
+        <h3>Tasks</h3>
+        <p><a href="add_task.html" style="text-decoration: none; color: #667eea; font-weight: bold;">Add New Task</a></p>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="assignment-box">
+        <h3>Task Assignments</h3>
+        <ul id="assignmentList"></ul>
+    </div>
+
+    <div class="employee-box">
+        <h3>Employees</h3>
+        <p><a href="add_employee.html" style="text-decoration: none; color: #667eea; font-weight: bold;">Add New Employee</a></p>
+        <ul id="employeeList"></ul>
+    </div>
+
+    <div class="employee-box">
+        <h3>Remove Employee</h3>
+        <select id="removeEmployeeSelect" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px;">
+            <option value="">Select employee to remove</option>
+        </select>
+        <button onclick="removeEmployee()" style="background: #dc3545;">Remove Employee</button>
+        <div id="employeeMessage" style="margin-top: 10px; display: none;"></div>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

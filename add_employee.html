@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<h1>Add New Employee</h1>
+<a href="login.html" style="position: absolute; top: 20px; right: 20px; text-decoration: none; color: #667eea; font-weight: bold;">Back to Login</a>
+
+<div class="container">
+
+    <div class="employee-box">
+        <h3>Add Employee</h3>
+        <form id="addEmployeeForm">
+            <input type="text" id="employeeName" placeholder="Enter Employee Name" required>
+            <button type="submit">Add Employee</button>
+        </form>
+        <div id="message" style="margin-top: 10px; display: none;"></div>
+    </div>
+
+    <div class="employee-box">
+        <h3>Current Employees</h3>
+        <ul id="currentEmployeeList"></ul>
+    </div>
+
+</div>
+
+<script src="add_employee.js"></script>
+</body>
+</html>
